@@ -1,13 +1,13 @@
 'use strict';
 
-const books = document.querySelectorAll('.book');
-const aside = document.querySelector('.books');
-const titleBook3 = books[4].querySelector('a');
-const adv = document.querySelector('.adv');
-const liBook2 = books[0].querySelectorAll('li');
-const liBook5 = books[5].querySelectorAll('li');
-const li = document.createElement('li');
-const liBook6 = books[2].querySelectorAll('li');
+const books = document.querySelectorAll('.book'),
+      aside = document.querySelector('.books'),
+      titleBook3 = books[4].querySelector('a'),
+      adv = document.querySelector('.adv'),
+      liBook2 = books[0].querySelectorAll('li'),
+      liBook5 = books[5].querySelectorAll('li'),
+      li = document.createElement('li'),
+      liBook6 = books[2].querySelectorAll('li');
 
 aside.prepend(books[1]);
 aside.append(books[2]);
@@ -30,8 +30,3 @@ liBook5[7].append(liBook5[5]);
 
 liBook6[9].prepend(li);
 li.innerText = 'Глава 8: За пределами ES6';
-
-
-
-
-
